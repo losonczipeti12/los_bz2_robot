@@ -57,3 +57,9 @@ The easiest way is VS code:
 > Don't forget to rename the directory (folder) and the file too.
 
 Now `colcon build` your ROS 2 package and you can start wokring.
+
+
+
+## Saját megvalósítás (Sensor & Safety Controller)
+* **sensor_node**: Kiírja és hirdeti a mért távolságot a `/robot_distance` topicban (`std_msgs/msg/Float32`).
+* **safety_controller_node**: Feliratkozik a `/robot_distance` topicra, és ha a távolság 0.5 méter alatt van, vészjelzést küld a robot megállítására.

@@ -23,7 +23,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            # 'control_vehicle = ros2_py_template.control_vehicle:main',
+            'sensor_node = ros2_py_template.sensor_node:main',
+            'safety_controller_node = ros2_py_template.safety_controller_node:main',
         ],
     },
 )
