@@ -2,7 +2,7 @@ from setuptools import find_packages, setup
 from glob import glob
 import os
 
-package_name = 'ros2_py_template'
+package_name = 'los_bz2_robot'
 
 setup(
     name=package_name,
@@ -23,8 +23,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'sensor_node = ros2_py_template.sensor_node:main',
-            'safety_controller_node = ros2_py_template.safety_controller_node:main',
+            'sensor_node = los_bz2_robot.sensor_node:main',
+            'safety_controller_node = los_bz2_robot.safety_controller_node:main',
         ],
     },
 )
